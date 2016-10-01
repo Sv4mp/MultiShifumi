@@ -1,0 +1,73 @@
+<!--
+    buttons and inputs
+    #usernameInput
+    #submitUser
+
+    images
+    #rock
+    #paper
+    #scissors
+
+    rows
+    #titleRow
+    #vsRow
+    #usernameRow
+    #actionRow
+    #usernameStatus
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+
+  <div class="container">
+
+      <div id="titleRow" class="row">
+          <h1>Rock. Paper. Scissors. Pick wisely!</h1>
+      </div>
+
+      <div id="vsRow" class="to-reset-row row hidden">
+          <h1><span class="nameOfYou"></span> vs <span class="nameOfOpponent">B</span></h1>
+      </div>
+
+      <div id="findGame" class="row hidden">
+          <button id="findGameButton">Click to find a game!</button>
+      </div>
+
+      <button id="createNewgamme">New game</button>
+      <button id="joinGame">Join game</button>
+
+      <div id="usernameRow" class="row row-username">
+          <p>Give yourself a name:</p>
+          <input id="usernameInput" type="text">
+          <button id="submitUser">Enter name</button>
+          <p id="usernameStatus"></p>
+      </div>
+
+      <div id="actionRow" class="to-reset-row row row-options hidden">
+        <img id="rock" src="/images/rock.png">
+        <img id="paper" src="/images/paper.png">
+        <img id="scissors" src="/images/scissors.png">
+      </div>
+
+      <div id="statusRow" class="to-reset-row row hidden">
+          <p id="winLoseResults">this is #status</p>
+          <p>Allez, on remets ça dans 5 secondes</p>
+      </div>
+
+      <div id="vsSelected" class="to-reset-row row hidden">
+        <span class="nameOfOpponent"></span> a déjà choisi, bouge !
+      </div>
+
+      <div id="restartBtn" class="row hidden">Round suivant</div>
+
+  </div>
+
+    <script type="text/javascript"  src="/javascripts/jquery.js"></script>
+    <script type="text/javascript"  src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript"  src="/javascripts/website.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!--
+    buttons and inputs
+    #usernameInput
+    #submitUser
+
+    images
+    #rock
+    #paper
+    #scissors
+
+    rows
+    #titleRow
+    #vsRow
+    #usernameRow
+    #actionRow
+    #usernameStatus
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+
+  <div class="container">
+
+      <div id="titleRow" class="row">
+          <h1>Rock. Paper. Scissors. Pick wisely!</h1>
+      </div>
+
+      <div id="usernameRow" class="row row-username">
+          <p>Give yourself a name:</p>
+          <input id="usernameInput" type="text">
+          <p id="usernameStatus"></p>
+      </div>
+
+      <button id="createNewgame">New game</button>
+
+  </div>
+
+    <script type="text/javascript"  src="/javascripts/jquery.js"></script>
+    <script type="text/javascript"  src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript"  src="/javascripts/website.js"></script>
+</body>
+</html>
